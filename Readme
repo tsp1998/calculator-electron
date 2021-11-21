@@ -1,0 +1,5 @@
+Steps to run Qualitia
+1. Install all dependecies in current directory with command promt or terminal=> npm install
+2. Run the electron start command command => npm start
+
+You can explore more commands scripts in package json file at scripts property

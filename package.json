@@ -1,0 +1,21 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "This is calculator electron app",
+  "main": "core/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --watch ./core --exec \"electron .\"",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=public/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=public/icon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Calculator\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=public/icon.png --prune=false --out=release-builds"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^15.2.0",
+    "electron-packager": "^15.4.0",
+    "nodemon": "^2.0.13"
+  }
+}

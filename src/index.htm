@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="inputs-container">
+      <div class="form-group">
+        <label for="firstNumber">First Number Please</label>
+        <input type="text" id="firstNumber">
+      </div>
+      <div class="form-group">
+        <label for="firstNumber">Second Number Please</label>
+        <input type="text" id="secondNumber">
+      </div>
+    </div>
+    <div class="result-container">
+      <span>Result: </span>
+      <span id="result"></span>
+    </div>
+    <div class="buttons-container">
+      <button class="button-operation" id="add">Add</button>
+      <button class="button-operation" id="subtract">Subtract</button>
+      <button class="button-operation" id="multiply">Multiply</button>
+      <button class="button-operation" id="divide">Divide</button>
+      <a id="history" href="history.htm">History</a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
